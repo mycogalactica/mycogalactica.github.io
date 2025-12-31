@@ -5,114 +5,118 @@
   --sky:#cfe9f5;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing:border-box; }
 
 body {
   margin:0;
   font-family:Arial, sans-serif;
   background:var(--ink-black);
   color:white;
+  font-size:18px;
+  line-height:1.6;
 }
 
-a {
-  color:inherit;
-  text-decoration:none;
-}
+a { color:inherit; text-decoration:none; }
 
-/* ---------- Top bar ---------- */
+/* Top bar */
 
 .topbar {
   position:fixed;
   top:0; left:0; right:0;
-  height:50px;
+  height:60px;
   background:var(--navy);
   display:flex;
   align-items:center;
-  padding:0 15px;
+  padding:0 20px;
   z-index:1000;
 }
 
-.menu-btn {
-  font-size:24px;
-  cursor:pointer;
-}
+.menu-btn { font-size:30px; cursor:pointer; }
 
-/* ---------- Sidebar ---------- */
+/* Sidebar */
 
 .sidebar {
   position:fixed;
   top:0;
-  left:-260px;
-  width:260px;
+  left:-280px;
+  width:280px;
   height:100%;
   background:var(--navy);
-  padding-top:60px;
+  padding-top:80px;
   transition:left 0.3s ease;
   z-index:999;
 }
 
-.sidebar.open {
-  left:0;
-}
+.sidebar.open { left:0; }
 
 .sidebar a {
   display:block;
-  padding:15px 20px;
+  padding:18px 24px;
+  font-size:1.1em;
   border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
 .close-btn {
   position:absolute;
-  top:10px;
-  right:15px;
-  font-size:22px;
+  top:15px;
+  right:18px;
+  font-size:28px;
   cursor:pointer;
 }
 
-/* ---------- Layout ---------- */
+/* Layout */
 
 main {
-  padding-top:80px;
-  max-width:900px;
+  padding-top:120px;
+  max-width:1000px;
   margin:auto;
-  padding-left:20px;
-  padding-right:20px;
+  padding-left:24px;
+  padding-right:24px;
 }
 
-/* ---------- Hero ---------- */
+/* Logo */
 
 .hero {
   text-align:center;
-  margin-bottom:60px;
+  margin-bottom:50px;
 }
 
 .hero img {
-  width:670px;
+  width:520px;
   max-width:100%;
 }
 
-/* ---------- Sections ---------- */
+.subpage-hero {
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.subpage-hero img {
+  width:520px;
+  max-width:100%;
+  opacity:0.95;
+}
+
+/* Sections */
 
 .section-list {
   display:flex;
   flex-direction:column;
-  gap:30px;
+  gap:40px;
 }
 
 .section-item {
   display:flex;
   align-items:center;
-  gap:20px;
+  gap:30px;
   background:rgba(255,255,255,0.02);
-  padding:20px;
-  border-radius:12px;
+  padding:30px;
+  border-radius:16px;
 }
 
 .circle {
-  width:90px;
-  height:90px;
+  width:110px;
+  height:110px;
   border-radius:50%;
   border:4px solid var(--emerald);
   flex-shrink:0;
@@ -121,41 +125,54 @@ main {
 .section-item h3 {
   margin:0;
   color:var(--sky);
+  font-size:1.8em;
 }
 
 .section-item p {
-  margin:6px 0;
-  font-size:0.95em;
+  margin:10px 0;
+  font-size:1.1em;
   color:#ccc;
 }
 
 .btn {
   display:inline-block;
-  margin-top:6px;
-  padding:6px 14px;
-  border:1px solid var(--emerald);
-  border-radius:20px;
-  font-size:0.85em;
+  margin-top:10px;
+  padding:10px 22px;
+  border:2px solid var(--emerald);
+  border-radius:24px;
+  font-size:1em;
   color:var(--emerald);
 }
 
-/* ---------- Footer ---------- */
+/* Headings */
+
+h2 {
+  color:var(--sky);
+  font-size:2.4em;
+  margin-bottom:20px;
+}
+
+/* Footer */
 
 footer {
-  margin-top:80px;
-  padding:30px;
+  margin-top:100px;
+  padding:40px 30px;
   text-align:center;
   background:var(--navy);
-  font-size:0.85em;
+  font-size:1em;
   color:#aaa;
 }
 
-/* ---------- Mobile ---------- */
+footer a { color:var(--emerald); }
+
+/* Mobile */
 
 @media (max-width:768px) {
 
-  .hero img {
-    width:220px;
+  body { font-size:16px; }
+
+  .hero img, .subpage-hero img {
+    width:260px;
   }
 
   .section-item {
@@ -164,20 +181,16 @@ footer {
   }
 
   .circle {
-    width:70px;
-    height:70px;
+    width:80px;
+    height:80px;
   }
 
-  .topbar {
-    height:45px;
-  }
+  .section-item h3 { font-size:1.5em; }
+
+  h2 { font-size:2em; }
 
   main {
-    padding-left:12px;
-    padding-right:12px;
-  }
-
-  footer {
-    font-size:0.8em;
+    padding-left:16px;
+    padding-right:16px;
   }
 }
