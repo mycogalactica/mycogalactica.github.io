@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us — Mycogalactica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+function openMenu() {
+  document.getElementById("sidebar").classList.add("open");
+}
+function closeMenu() {
+  document.getElementById("sidebar").classList.remove("open");
+}
+</script>
+
+<div class="topbar">
+  <span class="menu-btn" onclick="openMenu()">&#9776;</span>
+</div>
+
+<div id="sidebar" class="sidebar">
+  <span class="close-btn" onclick="closeMenu()">&times;</span>
+  <a href="index.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="product.html">Our product</a>
+  <a href="investors.html">For investors</a>
+  <a href="contact.html">Contact us</a>
+</div>
+
+<main>
+
+  <h2 style="color:var(--sky)">Contact us</h2>
+
+  <p>Email: <a href="mailto:mycogalactica@example.com">mycogalactica@example.com</a></p>
+  <p>Instagram: <a href="https://instagram.com/mycogalactica" target="_blank">@mycogalactica</a></p>
+
+</main>
+
+<footer>
+  <p>Contact us or follow us on Instagram</p>
+  <p>Mycogalactica — The future of sustainable construction in space</p>
+</footer>
+
+</body>
+</html>
