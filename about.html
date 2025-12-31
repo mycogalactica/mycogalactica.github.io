@@ -1,63 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Mycogalactica — About Us</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us — Mycogalactica</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<script>
+function openMenu() {
+  document.getElementById("sidebar").classList.add("open");
+}
+function closeMenu() {
+  document.getElementById("sidebar").classList.remove("open");
+}
+</script>
+
 <div class="topbar">
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <span class="menu-btn" onclick="openMenu()">&#9776;</span>
 </div>
 
-<div class="sidebar" id="sidebar">
-  <div class="close-btn" onclick="toggleMenu()">✕</div>
+<div id="sidebar" class="sidebar">
+  <span class="close-btn" onclick="closeMenu()">&times;</span>
   <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-  <a href="product.html">Our Product</a>
-  <a href="investors.html">For Investors</a>
-  <a href="contact.html">Contact</a>
+  <a href="about.html">About us</a>
+  <a href="product.html">Our product</a>
+  <a href="investors.html">For investors</a>
+  <a href="contact.html">Contact us</a>
 </div>
 
 <main>
-  <h1 style="color:var(--sky);">About Us</h1>
+
+  <h2 style="color:var(--sky)">About us</h2>
 
   <p>
-    Mycogalactica is an early-stage aerospace materials company focused on enabling sustainable construction beyond Earth.
-    We develop biologically grown building materials that drastically reduce the cost, mass, and environmental impact of space infrastructure.
+    Mycogalactica is a student-founded aerospace sustainability venture focused on enabling long-term human presence in space.
+    We develop biologically-derived construction materials that reduce launch mass, cost, and environmental impact.
   </p>
 
   <p>
-    Our work sits at the intersection of biotechnology, materials science, and aerospace engineering.
-    We believe that humanity’s expansion into space must be done responsibly — with systems that are regenerative, lightweight, and resource-efficient.
-  </p>
-
-  <p>
-    Instead of launching every kilogram of building material from Earth, we design systems that grow structural components in situ using minimal inputs.
-    This approach allows future missions to build habitats, research stations, and industrial platforms with far lower logistical and financial barriers.
-  </p>
-
-  <h2 style="color:var(--emerald); margin-top:40px;">Our Mission</h2>
-
-  <p>
-    To make off-world construction sustainable, scalable, and economically viable — enabling long-term human presence beyond Earth while minimizing environmental impact on both Earth and space environments.
-  </p>
-
-  <h2 style="color:var(--emerald); margin-top:40px;">Our Vision</h2>
-
-  <p>
-    A future where space infrastructure is not shipped, but grown.
-    Where habitats, research facilities, and industrial structures are produced locally from biological systems, enabling resilient and sustainable expansion into space.
+    Our flagship product, MycoBlocks, uses engineered mycelium composites that can be grown in-situ using minimal inputs.
+    This allows space infrastructure to be produced locally rather than transported from Earth.
   </p>
 
 </main>
 
 <footer>
-  <p>Contact us here or follow us on <a href="https://instagram.com/" target="_blank">Instagram</a></p>
+  <p>Contact us or follow us on Instagram</p>
   <p>Mycogalactica — The future of sustainable construction in space</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
