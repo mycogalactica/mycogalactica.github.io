@@ -6,71 +6,74 @@
   <title>Mycogalactica</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <script>
 function openMenu() {
-  document.getElementById("Menu").style.width = "260px";
+  document.getElementById("sidebar").classList.add("open");
 }
 function closeMenu() {
-  document.getElementById("Menu").style.width = "0";
+  document.getElementById("sidebar").classList.remove("open");
 }
 </script>
 
-<header>
-  <div id="Menu" class="sidemenu">
-    <a href="javascript:void(0)" class="closebutton" onclick="closeMenu()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="about.html">About us</a>
-    <a href="product.html">Our product</a>
-    <a href="investors.html">For investors</a>
-    <a href="contact.html">Contact us</a>
-  </div>
+<div class="topbar">
+  <span class="menu-btn" onclick="openMenu()">&#9776;</span>
+</div>
 
-  <div class="navbar">
-    <span onclick="openMenu()">&#9776; menu</span>
-  </div>
-</header>
+<div id="sidebar" class="sidebar">
+  <span class="close-btn" onclick="closeMenu()">&times;</span>
+  <a href="index.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="product.html">Our product</a>
+  <a href="investors.html">For investors</a>
+  <a href="contact.html">Contact us</a>
+</div>
 
 <main>
 
-  <img src="logo.png" alt="Mycogalactica logo" class="center hero-logo">
-
-  <div class="image-left">
-    <div class="circle"></div>
-    <div>
-      <h2>About us</h2>
-      <p>Who we are and why we exist.</p>
-      <a href="about.html"><button>Learn more</button></a>
-    </div>
+  <div class="hero">
+    <img src="logo.png" alt="Mycogalactica logo">
   </div>
 
-  <div class="image-left">
-    <div class="circle"></div>
-    <div>
-      <h2>Our product</h2>
-      <p>How MycoBlocks enable sustainable space construction.</p>
-      <a href="product.html"><button>Learn more</button></a>
-    </div>
-  </div>
+  <div class="section-list">
 
-  <div class="image-left">
-    <div class="circle"></div>
-    <div>
-      <h2>For investors</h2>
-      <p>Market opportunity and long-term vision.</p>
-      <a href="investors.html"><button>Learn more</button></a>
+    <div class="section-item">
+      <div class="circle"></div>
+      <div>
+        <h3>About us</h3>
+        <p>Who we are and why we exist.</p>
+        <a href="about.html" class="btn">Learn more</a>
+      </div>
     </div>
-  </div>
 
-  <div class="image-left">
-    <div class="circle"></div>
-    <div>
-      <h2>Contact us</h2>
-      <p>Get in touch with the Mycogalactica team.</p>
-      <a href="contact.html"><button>Learn more</button></a>
+    <div class="section-item">
+      <div class="circle"></div>
+      <div>
+        <h3>Our product</h3>
+        <p>How MycoBlocks enable sustainable space construction.</p>
+        <a href="product.html" class="btn">Learn more</a>
+      </div>
     </div>
+
+    <div class="section-item">
+      <div class="circle"></div>
+      <div>
+        <h3>For investors</h3>
+        <p>Market opportunity and long-term vision.</p>
+        <a href="investors.html" class="btn">Learn more</a>
+      </div>
+    </div>
+
+    <div class="section-item">
+      <div class="circle"></div>
+      <div>
+        <h3>Contact us</h3>
+        <p>Get in touch with the Mycogalactica team.</p>
+        <a href="contact.html" class="btn">Learn more</a>
+      </div>
+    </div>
+
   </div>
 
 </main>
@@ -82,3 +85,4 @@ function closeMenu() {
 
 </body>
 </html>
+
