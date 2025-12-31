@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Site</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin-top: 100px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Hello</h1>
-    <p>This site is hosted on GitHub Pages.</p>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mycogalactica — Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="toggleMenu()">✕</div>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="product.html">Our Product</a>
+  <a href="investors.html">For Investors</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+  <div class="hero">
+    <img src="logo.png" alt="Mycogalactica Logo">
+    <h1>Mycogalactica</h1>
+    <h2>The future of sustainable construction in space</h2>
+    <h2>MycoBlocks</h2>
+  </div>
+
+  <div class="section-list">
+    <div class="section-item">
+      <div class="circle"></div>
+      <div>
+        <h3>About Us</h3>
+        <p>Who we are and why we exist.</p>
+        <a class="btn" href="about.html">Learn more</a>
+      </div>
+    </div>
+
+    <div class="section-item">
+      <div class="circle"></div>
+      <div>
+        <h3>Our Product</h3>
+        <p>How MycoBlocks enable sustainable space construction.</p>
+        <a class="btn" href="product.html">Learn more</a>
+      </div>
+    </div>
+
+    <div class="section-item">
+      <div class="circle"></div>
+      <div>
+        <h3>For Investors</h3>
+        <p>Market opportunity and long-term vision.</p>
+        <a class="btn" href="investors.html">Learn more</a>
+      </div>
+    </div>
+
+    <div class="section-item">
+      <div class="circle"></div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>Get in touch with our team.</p>
+        <a class="btn" href="contact.html">Learn more</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Contact us here or follow us on <a href="https://instagram.com/" target="_blank">Instagram</a></p>
+  <p>Mycogalactica — The future of sustainable construction in space</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
