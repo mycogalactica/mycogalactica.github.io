@@ -109,9 +109,11 @@ main {
   display:flex;
   align-items:center;
   gap:30px;
-  background:rgba(255,255,255,0.02);
+  background:var(--dark-navy);
+  opacity: 0.90;
   padding:30px;
   border-radius:16px;
+  
 }
 
 .circle {
