@@ -1,7 +1,7 @@
 :root {
   --dark-navy:#000024;
   --bright-blue:#0183c1;
-  --navy:#0072c3;
+  --navy:#0054ad;
   --sky:#6ab4ca;
 }
 
@@ -94,7 +94,7 @@ main {
 .subpage-hero img {
   width:520px;
   max-width:100%;
-  opacity:0.95;
+  opacity:0.90;
 }
 
 /* Sections */
