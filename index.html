@@ -8,21 +8,14 @@
 </head>
 <body>
 
-<script>
-function openMenu() {
-  document.getElementById("sidebar").classList.add("open");
-}
-function closeMenu() {
-  document.getElementById("sidebar").classList.remove("open");
-}
-</script>
+<script src="script.js"></script>
 
 <div class="topbar">
-  <span class="menu-btn" onclick="openMenu()">&#9776;</span>
+  <span class="menu-btn" onclick="toggleMenu()">&#9776;</span>
 </div>
 
 <div id="sidebar" class="sidebar">
-  <span class="close-btn" onclick="closeMenu()">&times;</span>
+  <span class="close-btn" onclick="toggleMenu()">&times;</span>
   <a href="index.html">Home</a>
   <a href="about.html">About us</a>
   <a href="product.html">Our product</a>
@@ -78,7 +71,6 @@ function closeMenu() {
 
 </main>
 
-
 <footer>
   <p>Contact us or follow us on <a href="https://instagram.com/mycogalactica" target="_blank">Instagram</a></p>
   <p>MycoGalactica — The future of sustainable construction in space</p>
@@ -86,4 +78,3 @@ function closeMenu() {
 
 </body>
 </html>
-
