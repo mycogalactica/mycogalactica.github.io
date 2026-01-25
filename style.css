@@ -308,6 +308,12 @@ footer a { color:var(--bright-blue); }
 
 @media (max-width:768px) {
 
+  .data-item {
+    flex: 0 1 100%;
+    max-width: 500px;
+  }
+
+
   .product-layout {
     flex-direction: column;
     text-align: center;
