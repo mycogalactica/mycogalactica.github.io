@@ -111,6 +111,24 @@ main {
   margin-bottom: 10px;
 }
 
+.product-layout {
+  display: flex;          /* This turns on the side-by-side layout */
+  align-items: center;    /* Vertically centers the text with the image */
+  gap: 40px;              /* Creates space between image and text */
+  margin-top: 30px;
+}
+
+.product-image img {
+  width: 350px;           /* Sets a reasonable size */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.product-text {
+  flex: 1;                /* Makes the text fill the remaining space */
+}
+
 /* ---------- Sections ---------- */
 
 .section-list {
@@ -239,6 +257,17 @@ footer a { color:var(--bright-blue); }
 /* ---------- Mobile ---------- */
 
 @media (max-width:768px) {
+
+  .product-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .product-image img {
+    width: 100%;          /* Scale up to fit mobile width */
+    max-width: 300px;     /* But keep it from getting TOO big */
+    margin: 0 auto;
+  }
 
   body { font-size:16px; }
 
