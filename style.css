@@ -97,6 +97,17 @@ main {
   max-width:100%;
 }
 
+.product-image-container {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.product-image-container img {
+  width: 520px;
+  max-width: 100%;
+  display: block;
+}
+
 /* ---------- Sections ---------- */
 
 .section-list {
