@@ -129,6 +129,25 @@ main {
   flex: 1;                /* Makes the text fill the remaining space */
 }
 
+
+.video-container {
+  width: 100%;
+  max-width: 800px; /* Limits the size so it's not too "huge" */
+  margin: 0 auto 40px auto; /* Centers it and adds space below */
+  border-radius: 12px;
+  overflow: hidden; /* Clips the video corners to match the border-radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  background: #000;
+}
+
+/* This makes the video fill the container correctly */
+.video-container video, 
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Maintains the standard widescreen shape */
+  display: block;
+}
+
 /* ---------- Sections ---------- */
 
 .section-list {
