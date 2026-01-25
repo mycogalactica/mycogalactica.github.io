@@ -149,8 +149,9 @@ main {
 }
 
 .investor-content {
+  text-align: left;
   max-width: 800px; /* Keeps the text at a professional reading width */
-  margin: 0 auto;   /* Centers the container */
+  margin: 0;   /* Centers the container */
   line-height: 1.8; /* Increases breathing room between lines */
 }
 
