@@ -159,6 +159,26 @@ main {
   margin-bottom: 20px; /* Space between the paragraphs */
 }
 
+
+.investor-data-row {
+  display: flex;
+  justify-content: flex-start; /* Aligns both items to the left */
+  gap: 20px;                   /* Gap between table and graph */
+  margin: 30px 0 40px 0;       /* Space above and below the images */
+  flex-wrap: wrap;             /* Stacks them on mobile */
+}
+
+.data-item {
+  flex: 0 1 400px;             /* Each image container is max 400px wide */
+}
+
+.data-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
 /* ---------- Sections ---------- */
 
 .section-list {
