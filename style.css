@@ -148,6 +148,16 @@ main {
   display: block;
 }
 
+.investor-content {
+  max-width: 800px; /* Keeps the text at a professional reading width */
+  margin: 0 auto;   /* Centers the container */
+  line-height: 1.8; /* Increases breathing room between lines */
+}
+
+.investor-content p {
+  margin-bottom: 20px; /* Space between the paragraphs */
+}
+
 /* ---------- Sections ---------- */
 
 .section-list {
